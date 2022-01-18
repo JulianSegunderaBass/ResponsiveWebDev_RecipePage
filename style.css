@@ -195,6 +195,11 @@ input {
   font-weight: 400;
   line-height: 2.4rem;
 }
+.recipe-source {
+  font-size: 1.6rem;
+  color: var(--gray-3);
+  margin-top: 4.8rem;
+}
 /* ? Footer */
 footer {
   text-align: center;

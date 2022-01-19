@@ -77,9 +77,13 @@ p {
 .orange {
   color: var(--orange);
 }
+.gray {
+  color: var(--gray-2);
+}
 .list-item-flex {
   display: flex;
   gap: 1.7rem;
+  align-items: start;
 }
 /* ? Heading Section */
 .recipe-hero-section {
@@ -93,6 +97,10 @@ p {
   font-weight: 500;
   max-width: 70%;
   text-align: justify;
+}
+.recipe-description-icon {
+  transform: rotate(90deg);
+  color: var(--gray-3);
 }
 .recipe-img-container {
   margin-top: 2.4rem;
@@ -222,6 +230,54 @@ footer {
 }
 /* Media Queries */
 
-@media (max-width: 550px) {
-  
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 1.4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .ingredients-section {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 6rem;
+  }
+  .serving {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 3.6rem;
+  }
+  .serve-info {
+    justify-self: start;
+  }
+  #yields {
+    grid-column: 1 / -1;
+  }
+  .instructions-section {
+    display: flex;
+    flex-direction: column;
+  }
+  h1, h2 {
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  label {
+    font-size: 1.4rem;
+  }
+  .recipe-description {
+    font-size: 1.2rem;
+  }
+  .serve-info-label {
+    font-size: 0.8rem;
+  }
+  .serve-info-content {
+    font-size: 1rem;
+  }
 }
